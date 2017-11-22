@@ -5,3 +5,10 @@ C:\Users\jayto_000\Desktop\C Sharp\MoreHelloWorld\MoreHelloWorld\bin\Debug\MoreH
 C:\Users\jayto_000\Desktop\C Sharp\MoreHelloWorld\MoreHelloWorld\bin\Debug\MoreHelloWorld.pdb
 C:\Users\jayto_000\Desktop\C Sharp\MoreHelloWorld\MoreHelloWorld\obj\Debug\MoreHelloWorld.exe
 C:\Users\jayto_000\Desktop\C Sharp\MoreHelloWorld\MoreHelloWorld\obj\Debug\MoreHelloWorld.pdb
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\bin\Debug\MoreHelloWorld.exe.config
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\bin\Debug\MoreHelloWorld.exe
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\bin\Debug\MoreHelloWorld.pdb
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\obj\Debug\MoreHelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\obj\Debug\MoreHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\obj\Debug\MoreHelloWorld.exe
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\MoreHelloWorld\obj\Debug\MoreHelloWorld.pdb

@@ -22,6 +22,8 @@ namespace MoreHelloWorld
                 string name;
                 float hours;
                 int indexChoice;
+                int editChoice;
+                float newFloatValue;
 
                 try
                 {
@@ -82,8 +84,8 @@ namespace MoreHelloWorld
                             break;
                         } else
                         {
-                            Console.WriteLine("You have chosen {0}.", StaffList[indexChoice]);
-                            Console.Read();
+                            Console.WriteLine("You have chosen {0}.", StaffList[indexChoice].Name);
+                            StaffList.RemoveAt(indexChoice);
                         }
                         break;
                     case 4:
@@ -99,9 +101,24 @@ namespace MoreHelloWorld
                             exitCode = 1;
                             break;
                         }
-                        else
+                        Console.WriteLine("You have chosen {0}.", StaffList[indexChoice].Name);
+                        Console.WriteLine("What would you like to change?");
+                        Console.WriteLine("\t1. Hours Worked\n\t2. Hourly Rate\n\t3. Nothing...");
+                        Console.Write("Choice: ");
+                        editChoice = Convert.ToInt32(Console.ReadLine());
+                        switch (editChoice)
                         {
-                            Console.WriteLine("You have chosen {0}.", StaffList[indexChoice]);
+                            case 1:
+                                Console.Write("You have chosen to edit {0}'s hours.\nPlease Enter a new number: ", StaffList[indexChoice].Name);
+                                newFloatValue = Convert.ToSingle(Console.ReadLine());
+                                StaffList[indexChoice].HoursWorked = newFloatValue;
+                                break;
+                            case 2:
+                                Console.WriteLine("You have chosen to edit {0}'s pay rate", StaffList[indexChoice].Name);
+                                break;
+                            default:
+                                Console.WriteLine("You have chosen to do nothing...");
+                                break;
                         }
                         break;
                     default:
@@ -117,7 +134,7 @@ namespace MoreHelloWorld
                 Console.WriteLine("There are {0} Staff:", staffList.Count);
                 for (int i = 0; i < StaffList.Count; i++)
                 {
-                    Console.WriteLine(StaffList[i]);
+                    Console.WriteLine("{0}. {1}\t{2}F:2 Hrs at {3}:F2/Hr.", i+1, StaffList[i].Name, StaffList[i].HoursWorked, StaffList[i].Rate);
                 }
             }
 
@@ -137,7 +154,8 @@ namespace MoreHelloWorld
                 Console.Write("Please select an index: ");
                 try
                 {
-                    indexChoice = Convert.ToInt32(Console.Read());
+                    indexChoice = Convert.ToInt32(Console.ReadLine());
+                    indexChoice--;
                 }
                 catch (Exception e)
                 {
@@ -145,7 +163,6 @@ namespace MoreHelloWorld
                     return -1;
                 } if (indexChoice < StaffList.Count && indexChoice >= 0)
                 {
-                    Console.WriteLine("You have chosen index {0}", indexChoice);
                     return indexChoice;
                 } else
                 {
@@ -200,8 +217,28 @@ namespace MoreHelloWorld
             }
             set
             {
-                if (value > 0) {
+                if (value > 0)
+                {
                     hWorked = value;
+                }
+                else
+                {
+                    hWorked = 0;
+                }
+            }
+        }
+
+        public float Rate
+        {
+            get
+            {
+                return hourlyRate;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    hourlyRate = value;
                 }
                 else
                 {
