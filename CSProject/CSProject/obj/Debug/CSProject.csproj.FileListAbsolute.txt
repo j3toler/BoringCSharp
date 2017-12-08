@@ -1,0 +1,7 @@
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\bin\Debug\CSProject.exe.config
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\bin\Debug\CSProject.exe
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\bin\Debug\CSProject.pdb
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\obj\Debug\CSProject.csprojResolveAssemblyReference.cache
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\obj\Debug\CSProject.csproj.CoreCompileInputs.cache
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\obj\Debug\CSProject.exe
+C:\Users\jayto_000\Desktop\C Sharp\GitProjects\CSProject\CSProject\obj\Debug\CSProject.pdb
